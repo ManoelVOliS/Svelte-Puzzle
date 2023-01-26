@@ -14,10 +14,25 @@
 		}
 
 	}
+
+	function embaralhar(ordem){
+    for(let j, x, i = ordem.length; i; 
+        j = Math.floor(Math.random() * i), x = ordem[--i], ordem[i] = ordem[j], ordem[j] = x);
+        
+
+     return ordem 
+}
+
+	let ordem =[
+		['1.jpg','2.jpg','3.jpg'],
+		['4.jpg','5.jpg','6.jpg'],
+		['7.jpg','8.jpg','9.jpg']
+	];
+
 	function trocarPosi(pos1,pos2){
-		let backup = arr[pos1[0]][pos1[1]];
-		arr[pos1[0]][pos1[1]] = arr[pos2[0]][pos2[1]]
-		arr[pos2[0]][pos2[1]] = backup
+		let backup = ordem[pos1[0]][pos1[1]];
+		ordem[pos1[0]][pos1[1]] = ordem[pos2[0]][pos2[1]]
+		ordem[pos2[0]][pos2[1]] = backup
 		primeira = false
 		segunda = false
 	}
@@ -25,15 +40,18 @@
 	let primeira = false;
 	let segunda = false;
 	
-	let arr =[
-		[4,2,6],
-		[8,5,9],
-		[7,1,3]
+
+
+	let aprov =[
+		['1.jpg','2.jpg','3.jpg'],
+		['4.jpg','5.jpg','6.jpg'],
+		['7.jpg','8.jpg','9.jpg']
 	];
+
 
 </script>
 
-<svelte:head>
+
 	<style>
 		*{
 			padding: 0;
@@ -41,12 +59,32 @@
 			box-sizing: border-box;
 		}
 
-		main{
+		div.Caixa{
+			background-image: url('https://gifs.eco.br/wp-content/uploads/2021/10/imagens-e-gif-copa-da-mundo-5.gif');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			align-items: center;
+			display: flex;
+			flex-direction: column;
 			width: 100vw;
 			height: 100vh;
-			display: flex;
 			justify-content: center;
-			align-items: center;
+		}
+
+		div.VoltarJogo {
+			background: #8A2A2A;
+			text-align: center;
+			border-radius: 10px;
+			font-family: 'Roboto Condensed';
+			color: white;
+			justify-content: center;
+			box-shadow: 0px 0px 12px rgb(0, 0, 0);
+			margin-top: 2%;
+		}
+
+		.imgs{
+			width: 100%;
 		}
 
 		#table{
@@ -63,27 +101,21 @@
 			width: 100%;
 			height: 100%;
 			display: flex;
-			background: red;
 			justify-content: center;
 			align-items: center;
 			border: 1px black solid;
 		}
 	</style>
-</svelte:head>
 
-<main>
+
+<div class="Caixa">
 	<div id="table">
-		{#each arr as {}, i }
-			{#each arr as {},j }
-				<div on:click={()=>{selecionarPeca([i,j])}} class="peca">{arr[i][j]}</div>
+		{#each ordem as {}, i }
+			{#each ordem as {},j }
+				<div on:click={()=>{selecionarPeca([i,j])}} class="peca"><img class="imgs" src={ordem[i][j]} alt=""></div>
 			{/each}
 		{/each}
 	</div>
-</main>
+	<div class="VoltarJogo"><VoltarMenu/></div>
+</div>
 
-
-
-
-
-
-<VoltarMenu/>

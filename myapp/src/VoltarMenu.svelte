@@ -2,26 +2,24 @@
 	import { trocarEstadoDoJogo } from './Estado.js'
 </script>
 
+
 <div class='voltar' on:click={() => trocarEstadoDoJogo('menu')}>
 	Voltar ao menu
 </div>
 
 <style>
-    div.voltar {
-          text-align: center;
-          list-style-type: none;
-          font-size: 20px;
-          margin: auto;
-          margin-bottom: 5px;
-          border-radius: 10px;
-          border-style: solid;
-          border-width: 3px;
-          width: 20%;
-          padding: 3px;
-      }
-
-      div.voltar:hover { 
-          background-color: lightgrey;
-          cursor: pointer;
-      }
-  </style>
+            div.voltar {
+                width: 100%;
+                background: #8A2A2A;
+                text-align: center;
+                border-radius: 10px;
+                padding: 5px;
+                font-family: 'Roboto Condensed';
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0px 0px 12px gray;
+            }
+</style>
