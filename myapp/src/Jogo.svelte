@@ -17,9 +17,9 @@
     ];
 
 	let conjuntoBackup = [
-		[".1.jpg", ".2.jpg", ".3.jpg"],
-        [".4.jpg", ".5.jpg", ".6.jpg"],
-        [".7.jpg", ".8.jpg", ".9.jpg"]
+		["1", "2", "3"],
+        ["4", "5", "6"],
+        ["7", "8", "9"]
 	]
 
 	function selecionarPeca(pos){
@@ -35,33 +35,29 @@
 	}
 
 	function trocarPosi(pos1,pos2){
+		//Estrutura de troca de peça e posição
 		let backup = arr[pos1[0]][pos1[1]];
 		arr[pos1[0]][pos1[1]] = arr[pos2[0]][pos2[1]]
 		arr[pos2[0]][pos2[1]] = backup
 		primeira = false
 		segunda = false
-		//console.log(conjuntoBackup[i].replace("./", "").replace(".jpg",""))
-		let cont = 0
+		
+		// Validação das posições do puzzle
 		for(let i in arr){
 			for(let j in arr[i]){
-				if(conjuntoBackup[i][j].replace(".", "").replace(".jpg","") != arr[i][j].replace("./", "").replace(".jpg","")){
+				if(conjuntoBackup[i][j] != arr[i][j].replace("./", "").replace(".jpg","")){
 					
 					return false
 				}
 			}
 			
 		}
-		console.log(arr)
-		return true
+		//console.log(arr)
+		return window.alert('parabens', 5000)
 
 	}
 
-	
-	function validar(){
-	
-		
-	}
-
+	//Função para embaralhar o Puzzle
 	function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
             let j = Math.floor(Math.random() * (i + 1));
