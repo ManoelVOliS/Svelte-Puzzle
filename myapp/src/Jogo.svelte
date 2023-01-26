@@ -16,13 +16,19 @@
         [".7.jpg", ".8.jpg", ".9.jpg"],
     ];
 
+	let conjuntoBackup = [
+		[".1.jpg", ".2.jpg", ".3.jpg"],
+        [".4.jpg", ".5.jpg", ".6.jpg"],
+        [".7.jpg", ".8.jpg", ".9.jpg"]
+	]
+
 	function selecionarPeca(pos){
 		if(primeira === false){
 			primeira = pos;
-			console.log("Primeira selecionada => ",primeira);
+			//console.log("Primeira selecionada => ",primeira);
 		}else if(segunda === false){
 			segunda = pos;
-			console.log("segunda selecionada => ",segunda);
+			//console.log("segunda selecionada => ",segunda);
 			trocarPosi(primeira,segunda)
 		}
 
@@ -34,6 +40,26 @@
 		arr[pos2[0]][pos2[1]] = backup
 		primeira = false
 		segunda = false
+		//console.log(conjuntoBackup[i].replace("./", "").replace(".jpg",""))
+		let cont = 0
+		for(let i in arr){
+			for(let j in arr[i]){
+				if(conjuntoBackup[i][j].replace(".", "").replace(".jpg","") != arr[i][j].replace("./", "").replace(".jpg","")){
+					
+					return false
+				}
+			}
+			
+		}
+		console.log(arr)
+		return true
+
+	}
+
+	
+	function validar(){
+	
+		
 	}
 
 	function shuffleArray(array) {
@@ -89,7 +115,7 @@
 			color: white;
 			justify-content: center;
 			box-shadow: 0px 0px 12px rgb(0, 0, 0);
-			margin-top: 2%;
+			margin-top: 3%;
 		}
 
 		.imgs{
@@ -103,7 +129,14 @@
 			width: 500px;
 			height: 500px;
 			position: relative;
+			background: white;
+    		border-radius: 15px;
+    		padding: 15px;
+			margin-top: 3%;
+   	 		margin: auto;
+    		box-shadow: 5px 5px 10px gray;
 		}
+
 		.peca{
 			cursor: pointer;
 			font-size: 2em;
