@@ -3,6 +3,19 @@
     import { estado } from './Estado.js'
     import { trocarEstadoDoJogo } from "./Estado.js";
 
+	let vetor = [
+        "./1.jpg","./2.jpg","./3.jpg","./4.jpg","./5.jpg","./6.jpg","./7.jpg","./8.jpg","./9.jpg"
+    ]
+
+    let primeira = false;
+    let segunda = false;
+
+    let arr = [
+        [".1.jpg", ".2.jpg", ".3.jpg"],
+        [".4.jpg", ".5.jpg", ".6.jpg"],
+        [".7.jpg", ".8.jpg", ".9.jpg"],
+    ];
+
 	function selecionarPeca(pos){
 		if(primeira === false){
 			primeira = pos;
@@ -15,40 +28,36 @@
 
 	}
 
-	function embaralhar(ordem){
-    for(let j, x, i = ordem.length; i; 
-        j = Math.floor(Math.random() * i), x = ordem[--i], ordem[i] = ordem[j], ordem[j] = x);
-        
-
-     return ordem 
-}
-
-	let ordem =[
-		['1.jpg','2.jpg','3.jpg'],
-		['4.jpg','5.jpg','6.jpg'],
-		['7.jpg','8.jpg','9.jpg']
-	];
-
 	function trocarPosi(pos1,pos2){
-		let backup = ordem[pos1[0]][pos1[1]];
-		ordem[pos1[0]][pos1[1]] = ordem[pos2[0]][pos2[1]]
-		ordem[pos2[0]][pos2[1]] = backup
+		let backup = arr[pos1[0]][pos1[1]];
+		arr[pos1[0]][pos1[1]] = arr[pos2[0]][pos2[1]]
+		arr[pos2[0]][pos2[1]] = backup
 		primeira = false
 		segunda = false
 	}
 
-	let primeira = false;
-	let segunda = false;
-	
+	function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1));
+            let temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+    }
 
-
-	let aprov =[
-		['1.jpg','2.jpg','3.jpg'],
-		['4.jpg','5.jpg','6.jpg'],
-		['7.jpg','8.jpg','9.jpg']
-	];
-
-
+    shuffleArray(vetor)
+    function a(){
+        arr[0][0] = vetor[0]
+        arr[0][1] = vetor[1]
+        arr[0][2] = vetor[2]
+        arr[1][0] = vetor[3]
+        arr[1][1] = vetor[4]
+        arr[1][2] = vetor[5]
+        arr[2][0] = vetor[6]
+        arr[2][1] = vetor[7]
+        arr[2][2] = vetor[8]
+    }
+    a()
 </script>
 
 
@@ -110,9 +119,9 @@
 
 <div class="Caixa">
 	<div id="table">
-		{#each ordem as {}, i }
-			{#each ordem as {},j }
-				<div on:click={()=>{selecionarPeca([i,j])}} class="peca"><img class="imgs" src={ordem[i][j]} alt=""></div>
+		{#each arr as {}, i }
+			{#each arr as {},j }
+				<div on:click={()=>{selecionarPeca([i,j])}} class="peca"><img class="imgs" src= {arr[i][j]} alt=""></div>
 			{/each}
 		{/each}
 	</div>
