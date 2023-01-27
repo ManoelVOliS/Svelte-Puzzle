@@ -17,7 +17,7 @@
             </div>
             
             <div class='menuBtn' on:click={() => trocarEstadoDoJogo('sobre')}>
-                REFERÊNCIAS
+                SOBRE
             </div>
         </div>
 
