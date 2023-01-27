@@ -1,8 +1,8 @@
 <script>
 
-  import Jogo from './Jogo.svelte'
-	import Sobre from './Sobre.svelte'
-	import Menu from './Menu.svelte'
+  import Jogo from './Jogo.svelte';
+	import Sobre from './Sobre.svelte';
+	import Menu from './Menu.svelte';
 
   import { estado } from './Estado';
 </script>

@@ -1,5 +1,5 @@
 <script>
-	import { trocarEstadoDoJogo } from './Estado.js'
+	import { trocarEstadoDoJogo } from './Estado.js';
 </script>
 
 

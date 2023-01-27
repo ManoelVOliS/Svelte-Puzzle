@@ -3,8 +3,8 @@
 </svelte:head>
 
 <script>
-	import { estado } from './Estado.js'
-	import { trocarEstadoDoJogo } from './Estado.js'
+	import { estado } from './Estado.js';
+	import { trocarEstadoDoJogo } from './Estado.js';
 </script>
 
     <section>

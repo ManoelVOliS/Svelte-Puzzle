@@ -1,11 +1,11 @@
 <script>
     import VoltarMenu from "./VoltarMenu.svelte";
-    import { estado } from './Estado.js'
+    import { estado } from './Estado.js';
     import { trocarEstadoDoJogo } from "./Estado.js";
 
 	let vetor = [
         "./1.jpg","./2.jpg","./3.jpg","./4.jpg","./5.jpg","./6.jpg","./7.jpg","./8.jpg","./9.jpg"
-    ]
+    ];
 
     let primeira = false;
     let segunda = false;
@@ -20,7 +20,7 @@
 		["1", "2", "3"],
         ["4", "5", "6"],
         ["7", "8", "9"]
-	]
+	];
 
 	function selecionarPeca(pos){
 		if(primeira === false){
@@ -29,7 +29,7 @@
 		}else if(segunda === false){
 			segunda = pos;
 			//console.log("segunda selecionada => ",segunda);
-			trocarPosi(primeira,segunda)
+			trocarPosi(primeira,segunda);
 		}
 
 	}
@@ -37,23 +37,23 @@
 	function trocarPosi(pos1,pos2){
 		//Estrutura de troca de peça e posição
 		let backup = arr[pos1[0]][pos1[1]];
-		arr[pos1[0]][pos1[1]] = arr[pos2[0]][pos2[1]]
-		arr[pos2[0]][pos2[1]] = backup
-		primeira = false
-		segunda = false
+		arr[pos1[0]][pos1[1]] = arr[pos2[0]][pos2[1]];
+		arr[pos2[0]][pos2[1]] = backup;
+		primeira = false;
+		segunda = false;
 		
 		// Validação das posições do puzzle
 		for(let i in arr){
 			for(let j in arr[i]){
 				if(conjuntoBackup[i][j] != arr[i][j].replace("./", "").replace(".jpg","")){
 					
-					return false
+					return false;
 				}
 			}
 			
 		}
 		//console.log(arr)
-		return     setTimeout(() => { Swal.fire({
+		return setTimeout(() => { Swal.fire({
             title: 'PARABÉNS!!',
             text: 'Teste',
             icon: 'success',
@@ -73,15 +73,15 @@
 
     shuffleArray(vetor)
     function a(){
-        arr[0][0] = vetor[0]
-        arr[0][1] = vetor[1]
-        arr[0][2] = vetor[2]
-        arr[1][0] = vetor[3]
-        arr[1][1] = vetor[4]
-        arr[1][2] = vetor[5]
-        arr[2][0] = vetor[6]
-        arr[2][1] = vetor[7]
-        arr[2][2] = vetor[8]
+        arr[0][0] = vetor[0];
+        arr[0][1] = vetor[1];
+        arr[0][2] = vetor[2];
+        arr[1][0] = vetor[3];
+        arr[1][1] = vetor[4];
+        arr[1][2] = vetor[5];
+        arr[2][0] = vetor[6];
+        arr[2][1] = vetor[7];
+        arr[2][2] = vetor[8];
     }
     a()
 </script>
