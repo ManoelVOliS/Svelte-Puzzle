@@ -53,8 +53,12 @@
 			
 		}
 		//console.log(arr)
-		return window.alert('parabens', 5000)
-
+		return     setTimeout(() => { Swal.fire({
+            title: 'PARABÉNS!!',
+            text: 'Teste',
+            icon: 'success',
+            confirmButtonText: 'Legal'
+          }); }, 250);
 	}
 
 	//Função para embaralhar o Puzzle
@@ -154,6 +158,7 @@
 			{/each}
 		{/each}
 	</div>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<div class="VoltarJogo"><VoltarMenu/></div>
 </div>
 
