@@ -55,9 +55,9 @@
 		//console.log(arr)
 		return setTimeout(() => { Swal.fire({
             title: 'PARABÉNS!!',
-            text: 'Teste',
+            text: 'VOCÊ CONSEGUIU!!',
             icon: 'success',
-            confirmButtonText: 'Legal'
+            confirmButtonText: 'OKAY'
           }); }, 250);
 	}
 
@@ -135,6 +135,7 @@
 			margin-top: 3%;
    	 		margin: auto;
     		box-shadow: 5px 5px 10px gray;
+			
 		}
 
 		.peca{
