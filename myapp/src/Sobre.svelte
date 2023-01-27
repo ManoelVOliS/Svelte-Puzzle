@@ -9,8 +9,9 @@
 		<div class="Caixinha">
 			<h1>Sobre</h1>
 			
+			<br>
 			<p>
-				Pontos e referências utilizadas
+				Este projeto foi idealizado com o intuito de mostrar nossos aprendizados durante o primeiro período do curso Sistemas Para Internet no IFPE Campus Igarassu.
 			</p>
 			<div class="VoltarSobre"><VoltarMenu/></div>
 		</div>
