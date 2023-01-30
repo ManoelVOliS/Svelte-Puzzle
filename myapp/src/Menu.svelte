@@ -12,7 +12,7 @@
             PUZZLE
         </h1>
         <div class="button">
-            <div class='menuBtn' on:click={() => trocarEstadoDoJogo('jogo')}>
+            <div class='menuBtn' on:click={() => trocarEstadoDoJogo('selecionarmascote')}>
                 PLAY
             </div>
             
@@ -29,26 +29,26 @@
             @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
             div.menu {
-            background: rgb(255, 255, 255);
-            text-align: center;
-            list-style-type: none;
-            font-size: 20px;
-            margin: auto;
-            margin-bottom: 5px;
-            border-radius: 10px;
-            border-style: solid;
-            border-width: 3px;
-            width: 40%;
-            padding: 3px;
+                background: rgb(255, 255, 255);
+                text-align: center;
+                list-style-type: none;
+                font-size: 20px;
+                margin: auto;
+                margin-bottom: 5px;
+                border-radius: 10px;
+                border-style: solid;
+                border-width: 3px;
+                width: 40%;
+                padding: 3px;
             }
 
             div.menu:hover { 
-            background-color: lightgrey;
-            cursor: pointer;
+                background-color: lightgrey;
+                cursor: pointer;
             }
 
             div.button{
-                background: #8A2A2A;
+                background: #7b1942;
                 width: 50%;
                 height: 20%;
                 display: flex;
@@ -57,7 +57,7 @@
                 justify-content: center;
                 gap: 15px;
                 border-radius: 10px;
-                box-shadow: 0px 0px 12px gray;
+                box-shadow: 0px 0px 12px rgb(0, 0, 0);
             }
 
             div.menuBtn {
@@ -75,7 +75,7 @@
                 text-align: center;
                 text-align: match-parent;
                 font-family: 'Roboto Condensed';
-                text-shadow: 0px 0px 10px gray;
+                text-shadow: 0px 0px 10px rgb(0, 0, 0);
             }
 
             section {
@@ -85,7 +85,7 @@
                 justify-content: center;
                 width: 100%;
                 height: 100vh;
-                box-shadow: 0px 0px 10px gray;
+                box-shadow: 0px 0px 10px rgb(0, 0, 0);
             }
 
 </style>
