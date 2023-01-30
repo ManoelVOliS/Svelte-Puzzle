@@ -9,21 +9,22 @@
 
   import { estado } from './Estado';
 
-  let musica = new Audio ("./musica.mp3")
-  let Pause = true
-
-  function TocarMusica(){
+  let SMusica = new Audio ("../public/musica.mp3")
+      SMusica.volume = 0.07
+    let Pause = true
+    let Speaker = document.getElementById("#Music")
+    console.log(Speaker)
+    
+    function TocarMusica(){
         if(Pause == true){
-            musica.play()
+            SMusica.play()
             Pause = false
          
         }else{
-            musica.pause()
+            SMusica.pause()
             Pause = true
-
-          }
-
         }
+    }
 
 </script>
 
@@ -43,7 +44,8 @@
     <JogoFuleco/>
   {/if}
 
-  <div id="Music" on:click={(TocarMusica)}></div>
+   <div id ="Music" on:click={(TocarMusica)}></div>
+
 
 </main>
 
@@ -58,7 +60,7 @@
     position: absolute;
     left: 2%;
     bottom: 2%;
-  }
+            }
 
 main {
     background-image: url('../public/worldcup.jpg');
