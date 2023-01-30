@@ -13,7 +13,7 @@
         </h1>
         <div class="button">
             <div class='menuBtn' on:click={() => trocarEstadoDoJogo('selecionarmascote')}>
-                PLAY
+                JOGAR
             </div>
             
             <div class='menuBtn' on:click={() => trocarEstadoDoJogo('sobre')}>
