@@ -48,7 +48,7 @@
             }
 
             div.button{
-                background: #7b1942;
+                background:#170d2f;
                 width: 50%;
                 height: 20%;
                 display: flex;
@@ -72,6 +72,7 @@
             h1 {
                 font-size: 5em;
                 font-weight: 900;
+                color: azure;
                 text-align: center;
                 text-align: match-parent;
                 font-family: 'Roboto Condensed';

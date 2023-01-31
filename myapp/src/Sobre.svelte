@@ -79,7 +79,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			background: #7b1942;
+			background: #170d2f;
 			width: 50%;
 			height: 100%;
 		}

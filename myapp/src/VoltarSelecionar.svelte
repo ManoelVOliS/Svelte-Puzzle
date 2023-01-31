@@ -10,7 +10,7 @@
 <style>
             div.voltar {
                 width: 100%;
-                background: #7b1942;
+                background: #170d2f;
                 text-align: center;
                 border-radius: 10px;
                 padding: 5px;

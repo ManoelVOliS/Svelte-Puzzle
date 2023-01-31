@@ -12,8 +12,6 @@
   let SMusica = new Audio ("../public/musica.mp3")
       SMusica.volume = 0.07
     let Pause = true
-    let Speaker = document.getElementById("#Music")
-    console.log(Speaker)
     
     function TocarMusica(){
         if(Pause == true){
@@ -52,7 +50,7 @@
 <style>
   
   #Music {
-    background-image: url(../public/speakers/speaker-off.png);
+    background-image: url(../public/speakers/speaker-on.png);
     background-size: cover;
     cursor: pointer;
     width: 50px;

@@ -127,7 +127,7 @@
 			bottom: 13%;
 			padding: 2px;
 			width: 15%;
-			background: #7b1942;
+			background: #170d2f;
 			text-align: center;
 			border-radius: 10px;
 			padding: 5px;
