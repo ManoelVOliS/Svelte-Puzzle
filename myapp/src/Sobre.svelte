@@ -7,19 +7,19 @@
 	<div class="SobreConteudo">
 
 		<div class="Caixinha">
-			<h1 class="Sobre">Sobre</h1>
-			
+			<h1 class="Sobre">Sobre</h1>		
 			<p>
 				Este projeto foi idealizado com o intuito de mostrar nossos aprendizados durante o primeiro período do curso Sistemas Para Internet no IFPE Campus Igarassu.
 			</p>
 			<h1 class="Participantes">
 				Participantes
 			</h1>
-			<li> Manoel Victor </li>
-			<li> Livia Sabino </li>
-			<li> Layrton Warserman </li>
-			<li> Victor Alves </li>
-			<li>Alysson José </li>
+			<br>
+			<li><a href="https://github.com/ManoelVOliS">Manoel Victor</a></li>
+			<li><a href="https://github.com/liviasab">Livia Sabino</a></li>
+			<li><a href="https://github.com/Layrton07">Layrton Warserman</a></li>
+			<li><a href="https://github.com/SiqueiraVictor">Victor Alves</a></li>
+			<li><a href="https://github.com/alynhoo">Alysson José</a></li>
 			
 			<h1 class="AgradecimentosT">
 				Agradecimentos
@@ -48,7 +48,7 @@
 			padding: 5%;
 		}
 		.Participantes{
-			margin-top: 10%;
+			margin-top: 4%;
 			text-align: center;
 		}
 		
