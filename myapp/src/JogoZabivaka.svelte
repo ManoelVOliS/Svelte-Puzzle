@@ -102,7 +102,7 @@
 		}
 
 		div.Caixa{
-			background-image: url('https://capricho.abril.com.br/wp-content/uploads/2018/07/russo4.gif?crop=16px%2C0px%2C588px%2C400px&resize=680%2C453&quality=85&strip=info');
+			background-image: url('https://i.superesportes.com.br/iHyK56XTT8AUV6AltImeHlXMadY=/smart/imgsapp.df.superesportes.com.br/app/noticia_127116951798/2018/06/22/63011/20180622124501718687o.gif');
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
