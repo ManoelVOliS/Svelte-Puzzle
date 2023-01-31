@@ -62,8 +62,10 @@
 
             div.menuBtn {
                 width: 90%;
+                flex-direction: column;
+                align-items: center;
+                display: flex;
                 background: white;
-                text-align: center;
                 border-radius: 10px;
                 padding: 15px;
                 font-family: 'Roboto Condensed';

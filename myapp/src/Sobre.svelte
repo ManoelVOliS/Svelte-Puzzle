@@ -9,7 +9,6 @@
 		<div class="Caixinha">
 			<h1 class="Sobre">Sobre</h1>
 			
-			<br>
 			<p>
 				Este projeto foi idealizado com o intuito de mostrar nossos aprendizados durante o primeiro período do curso Sistemas Para Internet no IFPE Campus Igarassu.
 			</p>
@@ -41,7 +40,7 @@
 		@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 		
 		.Sobre{
-			margin-top: 10%;
+			margin-top: 2%;
 			text-align: center;
 		}
 		p {
@@ -59,9 +58,6 @@
 		}
 		.Agradecimento {
 			width: 100%;
-			text-align: center;
-			display: flex;
-			justify-content: center;
 		}
 		.Agradecimento p{
 			text-align: center;
@@ -104,6 +100,9 @@
 			height: 90%;
 		}
 		div.VoltarSobre{
+			flex-direction: column;
+            align-items: center;
+            display: flex;
 			position: absolute;
 			bottom: 3%;
 			padding: 1px;

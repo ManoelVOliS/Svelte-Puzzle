@@ -9,6 +9,8 @@
             SELECIONAR O MASCOTE
         </h1>
         <div class="button">
+
+
             <div class='menuBtn' on:click={() => trocarEstadoDoJogo('jogoLaeeb')}>
                 La'eeb 2022
             </div>
@@ -62,11 +64,14 @@
             }
 
             div.menuBtn {
+                flex-direction: column;
+                align-items: center;
+                display: flex;
                 width: 90%;
                 background: white;
                 text-align: center;
-                border-radius: 10px;
-                padding: 15px;
+                border-radius: 5px;
+                padding: 5px;
                 font-family: 'Roboto Condensed';
             }
 
@@ -92,8 +97,8 @@
 
             div.VoltarMenu{
 			position: absolute;
-			bottom: 28%;
-			padding: 1px;
+			bottom: 25%;
+			padding: 0px;
 			width: 25%;
 		}
 
