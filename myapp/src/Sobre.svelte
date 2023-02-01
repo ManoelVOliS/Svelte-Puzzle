@@ -7,20 +7,19 @@
 	<div class="SobreConteudo">
 
 		<div class="Caixinha">
-			<h1 class="Sobre">Sobre</h1>
-			
-			<br>
+			<h1 class="Sobre">Sobre</h1>		
 			<p>
 				Este projeto foi idealizado com o intuito de mostrar nossos aprendizados durante o primeiro período do curso Sistemas Para Internet no IFPE Campus Igarassu.
 			</p>
 			<h1 class="Participantes">
 				Participantes
 			</h1>
-			<li> Manoel Victor </li>
-			<li> Livia Sabino </li>
-			<li> Layrton Warserman </li>
-			<li> Victor Alves </li>
-			<li>Alysson José </li>
+			<br>
+			<li><a href="https://github.com/ManoelVOliS">Manoel Victor</a></li>
+			<li><a href="https://github.com/liviasab">Livia Sabino</a></li>
+			<li><a href="https://github.com/Layrton07">Layrton Warserman</a></li>
+			<li><a href="https://github.com/SiqueiraVictor">Victor Alves</a></li>
+			<li><a href="https://github.com/alynhoo">Alysson José</a></li>
 			
 			<h1 class="AgradecimentosT">
 				Agradecimentos
@@ -41,7 +40,7 @@
 		@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 		
 		.Sobre{
-			margin-top: 10%;
+			margin-top: 2%;
 			text-align: center;
 		}
 		p {
@@ -49,7 +48,7 @@
 			padding: 5%;
 		}
 		.Participantes{
-			margin-top: 10%;
+			margin-top: 4%;
 			text-align: center;
 		}
 		
@@ -59,9 +58,6 @@
 		}
 		.Agradecimento {
 			width: 100%;
-			text-align: center;
-			display: flex;
-			justify-content: center;
 		}
 		.Agradecimento p{
 			text-align: center;
@@ -104,6 +100,9 @@
 			height: 90%;
 		}
 		div.VoltarSobre{
+			flex-direction: column;
+            align-items: center;
+            display: flex;
 			position: absolute;
 			bottom: 3%;
 			padding: 1px;

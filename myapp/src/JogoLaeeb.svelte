@@ -4,7 +4,7 @@
     import { trocarEstadoDoJogo } from "./Estado.js";
 
 	let vetor = [
-        "./public/La'eeb/1.jpg","./public/La'eeb/2.jpg","./public/La'eeb/3.jpg","./public/La'eeb/4.jpg","./public/La'eeb/5.jpg","./public/La'eeb/6.jpg","./public/La'eeb/7.jpg","./public/La'eeb/8.jpg","./public/La'eeb/9.jpg"
+        "./public/Laeeb/1.jpg","./public/Laeeb/2.jpg","./public/Laeeb/3.jpg","./public/Laeeb/4.jpg","./public/Laeeb/5.jpg","./public/Laeeb/6.jpg","./public/Laeeb/7.jpg","./public/Laeeb/8.jpg","./public/Laeeb/9.jpg"
     ];
 
     let primeira = false;
@@ -45,7 +45,7 @@
 		// Validação das posições do puzzle
 		for(let i in arr){
 			for(let j in arr[i]){
-				if(conjuntoBackup[i][j] != arr[i][j].replace("./public/La'eeb/", "").replace(".jpg","")){
+				if(conjuntoBackup[i][j] != arr[i][j].replace("./public/Laeeb/", "").replace(".jpg","")){
 					
 					return false;
 				}
@@ -92,6 +92,17 @@
 		}, 0);
 	}
 
+	function gabarito(){
+		Swal.fire({
+			title: 'Gabarito!',
+			text: 'Tente fazer igual.',
+			imageUrl: '../public/Laeeb/Mascote completo.jpg',
+			imageWidth: 360,
+			imageHeight: 360,
+			imageAlt: 'Custom image',
+		})
+	}
+
 </script>
 
 
@@ -116,24 +127,44 @@
 		}
 
 		div.VoltarJogo {
+			flex-direction: column;
+            align-items: center;
+        	display: flex;
 			position: absolute;
-			bottom: 18%;
+			bottom: -8%;
 			padding: 1px;
 			width: 25%;
+			right: 69%;
 		}
 
-		button{
+		button.refresh{
 			position: absolute;
-			bottom: 13%;
-			padding: 2px;
-			width: 15%;
+			right: 37.5%;
+			bottom: -8%;
+			width: 25%;
 			background: #170d2f;
 			text-align: center;
-			border-radius: 10px;
+			border-radius: 5px;
 			padding: 5px;
 			font-family: 'Roboto Condensed';
 			color: white;
 			justify-content: center;
+			box-shadow: 0px 0px 12px rgb(0, 0, 0);
+		}
+
+		button.gabarito {
+			position: absolute;
+			right: 6%;
+			bottom: -8%;
+			width: 25%;
+			background: #170d2f;
+			text-align: center;
+			border-radius: 5px;
+			padding: 5px;
+			font-family: 'Roboto Condensed';
+			color: white;
+			justify-content: center;
+			box-shadow: 0px 0px 12px rgb(0, 0, 0);
 		}
 
 		.imgs{
@@ -143,6 +174,8 @@
 		#table{
 			display: grid;
 			grid-template-columns: repeat(3,auto);
+            flex-direction: column;
+            align-items: center;
 			
 			width: 500px;
 			height: 500px;
@@ -176,9 +209,12 @@
 				<div on:click={()=>{selecionarPeca([i,j])}} class="peca"><img class="imgs" src= {arr[i][j]} alt=""></div>
 			{/each}
 		{/each}
+
+		<div class="VoltarJogo"><VoltarSelecionar/></div>
+		<button class="refresh" on:click={refresh}>EMBARALHAR</button>
+		<button class="gabarito" on:click={gabarito}>GABARITO</button>
 	</div>
 	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-	<div class="VoltarJogo"><VoltarSelecionar/></div>
-	<button on:click={refresh}>EMBARALHAR</button>
+
 </div>
 

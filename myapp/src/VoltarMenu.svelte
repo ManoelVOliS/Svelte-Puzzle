@@ -13,7 +13,7 @@
                 width: 100%;
                 background: #170d2f;
                 text-align: center;
-                border-radius: 10px;
+                border-radius: 5px;
                 padding: 5px;
                 font-family: 'Roboto Condensed';
                 color: white;

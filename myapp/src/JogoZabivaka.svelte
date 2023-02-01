@@ -91,6 +91,18 @@
 			trocarEstadoDoJogo('jogoZabivaka')
 		}, 0);
 	}
+
+	function gabarito(){
+		Swal.fire({
+			title: 'Gabarito!',
+			text: 'Tente fazer igual.',
+			imageUrl: '../public/Zabivaka/Mascote completo.jpg',
+			imageWidth: 360,
+			imageHeight: 360,
+			imageAlt: 'Custom image',
+		})
+	}
+
 </script>
 
 
@@ -116,24 +128,44 @@
 
 
 		div.VoltarJogo {
+			flex-direction: column;
+            align-items: center;
+        	display: flex;
 			position: absolute;
-			bottom: 18%;
+			bottom: -8%;
 			padding: 1px;
 			width: 25%;
+			right: 69%;
 		}
 
-		button{
+		button.refresh{
 			position: absolute;
-			bottom: 13%;
-			padding: 2px;
-			width: 15%;
+			right: 37.5%;
+			bottom: -8%;
+			width: 25%;
 			background: #170d2f;
 			text-align: center;
-			border-radius: 10px;
+			border-radius: 5px;
 			padding: 5px;
 			font-family: 'Roboto Condensed';
 			color: white;
 			justify-content: center;
+			box-shadow: 0px 0px 12px rgb(0, 0, 0);
+		}
+
+		button.gabarito {
+			position: absolute;
+			right: 6%;
+			bottom: -8%;
+			width: 25%;
+			background: #170d2f;
+			text-align: center;
+			border-radius: 5px;
+			padding: 5px;
+			font-family: 'Roboto Condensed';
+			color: white;
+			justify-content: center;
+			box-shadow: 0px 0px 12px rgb(0, 0, 0);
 		}
 
 		.imgs{
@@ -176,9 +208,11 @@
 				<div on:click={()=>{selecionarPeca([i,j])}} class="peca"><img class="imgs" src= {arr[i][j]} alt=""></div>
 			{/each}
 		{/each}
+	<div class="VoltarJogo"><VoltarSelecionar/></div>
+	<button class ='refresh' on:click={refresh}>EMBARALHAR</button>	
+	<button class="gabarito" on:click={gabarito}>GABARITO</button>
 	</div>
 	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-	<div class="VoltarJogo"><VoltarSelecionar/></div>
-	<button on:click={refresh}>EMBARALHAR</button>
+
 </div>
 
