@@ -23,5 +23,5 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 ---
 
 <h4 align="center">
-    Feito por <a href="https://github.com/ManoelVOliS" target="_blank">Manoel V Oliveira</a>, <a href="https://github.com/SiqueiraVictor" target="_blank">Victor Alves</a>, <a href="https://github.com/liviasab" target="_blank">Livia Sabino</a>, <a href="https://github.com/Layrton07" target="_blank">Layrton Warserman</a> & <a href="https://github.com/alynhoo" target="_blank">Alysson</a>
+    Feito por <a href="https://github.com/ManoelVOliS" target="_blank">Manoel V Oliveira</a>, <a href="https://github.com/SiqueiraVictor" target="_blank">Victor Alves</a>, <a href="https://github.com/liviasab" target="_blank">Livia Sabino</a>, <a href="https://github.com/Layrton07" target="_blank">Layrton Warserman</a>, <a href="https://github.com/alynhoo" target="_blank">Alysson José</a>  & <a href="https://github.com/aR1ch4rdz" target="_blank">Anthony Richard</a>
 </h4>

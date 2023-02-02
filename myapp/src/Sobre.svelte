@@ -20,6 +20,7 @@
 			<li><a href="https://github.com/Layrton07">Layrton Warserman</a></li>
 			<li><a href="https://github.com/SiqueiraVictor">Victor Alves</a></li>
 			<li><a href="https://github.com/alynhoo">Alysson José</a></li>
+			<li><a href="https://github.com/aR1ch4rdz">Anthony Richard</a></li>
 			
 			<h1 class="AgradecimentosT">
 				Agradecimentos
