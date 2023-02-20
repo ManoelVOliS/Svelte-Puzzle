@@ -46,7 +46,7 @@
 		for(let i in arr){
 			for(let j in arr[i]){
 				if(conjuntoBackup[i][j] != arr[i][j].replace("./public/Laeeb/", "").replace(".jpg","")){
-					
+
 					return false;
 				}
 			}

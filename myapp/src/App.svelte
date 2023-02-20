@@ -12,7 +12,7 @@
   let SMusica = new Audio ("../public/musica.mp3")
       SMusica.volume = 0.07
     let Pause = true
-    
+   
     function TocarMusica(){
         if(Pause == true){
             SMusica.play()

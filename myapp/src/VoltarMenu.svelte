@@ -6,7 +6,7 @@
 <div class='voltar' on:click={() => trocarEstadoDoJogo('menu')}>
 	Voltar
 </div>
-<div></div>
+
 
 <style>
             div.voltar {
